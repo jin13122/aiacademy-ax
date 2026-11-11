@@ -1006,7 +1006,7 @@
           </div>
         </div>
 
-        <!-- Modules Accordion (초기 상태 모두 - 로 열려있음) -->
+        <!-- Modules Accordion (첫 번째 항목만 열림, 나머지 닫힘) -->
         <div class="accordion-list">
           <!-- 01 -->
           <div class="accordion-item">
@@ -1055,10 +1055,10 @@
               </div>
               <div class="accordion-right">
                 <span class="hour-badge">35h</span>
-                <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+                <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
               </div>
             </div>
-            <div class="accordion-body" id="curr-2" style="display: flex;">
+            <div class="accordion-body" id="curr-2" style="display: none;">
               <div class="accordion-bullet">
                 <span class="bullet-dot"></span>
                 <span>AI 활용 프론트엔드·백엔드 구조 설계</span>
@@ -1086,10 +1086,10 @@
               </div>
               <div class="accordion-right">
                 <span class="hour-badge">14h</span>
-                <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+                <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
               </div>
             </div>
-            <div class="accordion-body" id="curr-3" style="display: flex;">
+            <div class="accordion-body" id="curr-3" style="display: none;">
               <div class="accordion-bullet">
                 <span class="bullet-dot"></span>
                 <span>금융·물류 등 산업별 문제 분석과 AI 전환 시나리오</span>
@@ -1117,10 +1117,10 @@
               </div>
               <div class="accordion-right">
                 <span class="hour-badge">14h</span>
-                <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+                <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
               </div>
             </div>
-            <div class="accordion-body" id="curr-4" style="display: flex;">
+            <div class="accordion-body" id="curr-4" style="display: none;">
               <div class="accordion-bullet">
                 <span class="bullet-dot"></span>
                 <span>AI 에이전트 기술 동향·기업 AX 사례</span>
@@ -1151,10 +1151,10 @@
               </div>
               <div class="accordion-right">
                 <span class="hour-badge">217h</span>
-                <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+                <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
               </div>
             </div>
-            <div class="accordion-body" id="curr-5" style="display: flex;">
+            <div class="accordion-body" id="curr-5" style="display: none;">
               <div class="accordion-bullet">
                 <span class="bullet-dot"></span>
                 <span>프로젝트 전문 강사 코칭 및 실무 콘텐츠 지원</span>
@@ -1283,7 +1283,7 @@
       </div>
     </section>
 
-    <!-- Eligibility Section (초기 상태 모두 - 로 열려있음) -->
+    <!-- Eligibility Section (첫 번째 항목만 열림, 나머지 닫힘) -->
     <section id="qualification" class="section-eligibility">
       <div class="container reveal-on-scroll">
         <h2 class="section-title-dark">지원 자격 및 참여 대상</h2>
@@ -1300,7 +1300,7 @@
         </div>
 
         <div class="accordion-list">
-          <!-- 기초 역량 -->
+          <!-- 기초 역량 (첫 번째 항목: 열려있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('elig-1', this)">
               <h3 class="accordion-main-title">수강에 필요한 기초 역량 확인하기</h3>
@@ -1318,26 +1318,26 @@
             </div>
           </div>
 
-          <!-- 우대 역량 -->
+          <!-- 우대 역량 (닫혀있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('elig-2', this)">
               <h3 class="accordion-main-title">우대 역량 확인하기</h3>
-              <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+              <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
             </div>
-            <div class="accordion-body" id="elig-2" style="display: flex; padding-left: 0;">
+            <div class="accordion-body" id="elig-2" style="display: none; padding-left: 0;">
               <p style="font-size: 15px; color: #475569; line-height: 1.65;">
                 HTTP Polling·SSE·WebSocket, Python 비동기 프로그래밍(async/await), LangChain·LangGraph 실습 또는 RAG 파이프라인 구현 경험이 있으면 우대됩니다.
               </p>
             </div>
           </div>
 
-          <!-- 제출 증빙서류 -->
+          <!-- 제출 증빙서류 (닫혀있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('elig-3', this)">
               <h3 class="accordion-main-title">입학 시 제출할 증빙서류</h3>
-              <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+              <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
             </div>
-            <div class="accordion-body" id="elig-3" style="display: flex; padding-left: 0;">
+            <div class="accordion-body" id="elig-3" style="display: none; padding-left: 0;">
               <div class="accordion-bullet" style="align-items: flex-start;">
                 <span class="bullet-dot" style="margin-top: 9px;"></span>
                 <span><strong>서울시민·거소자:</strong> 주민등록등본, 기숙사·고시원 거주 확인서, 본인명의 공공요금고지서·부동산 계약서 등</span>
@@ -1355,7 +1355,7 @@
       </div>
     </section>
 
-    <!-- FAQ & Location Section (초기 상태 모두 - 로 열려있음) -->
+    <!-- FAQ & Location Section (첫 번째 항목만 열림, 나머지 닫힘) -->
     <section id="faq" class="section-faq">
       <div class="container reveal-on-scroll">
         <h2 class="section-title-dark">신청 전 확인하세요</h2>
@@ -1369,6 +1369,7 @@
         </div>
 
         <div class="accordion-list">
+          <!-- FAQ 1 (첫 번째 항목: 열려있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('faq-1', this)">
               <h3 class="accordion-main-title">예치금 10만원은 언제 반환되나요?</h3>
@@ -1381,36 +1382,39 @@
             </div>
           </div>
 
+          <!-- FAQ 2 (닫혀있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('faq-2', this)">
               <h3 class="accordion-main-title">수료 기준과 조기 취·창업 시 기준은?</h3>
-              <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+              <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
             </div>
-            <div class="accordion-body" id="faq-2" style="display: flex; padding-left: 0;">
+            <div class="accordion-body" id="faq-2" style="display: none; padding-left: 0;">
               <p style="font-size: 15px; color: #475569; line-height: 1.65;">
                 출석률 80% 이상 또는 전체 과정의 30% 이상 이수 후 취·창업에 성공하면 수료로 인정되며 예치금도 전액 반환됩니다.
               </p>
             </div>
           </div>
 
+          <!-- FAQ 3 (닫혀있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('faq-3', this)">
               <h3 class="accordion-main-title">코딩을 처음 시작하는 사람도 가능한가요?</h3>
-              <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+              <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
             </div>
-            <div class="accordion-body" id="faq-3" style="display: flex; padding-left: 0;">
+            <div class="accordion-body" id="faq-3" style="display: none; padding-left: 0;">
               <p style="font-size: 15px; color: #475569; line-height: 1.65;">
                 Python과 OpenAPI·LLM 활용 기초가 필요한 실전 과정입니다. 지원자격의 기초 역량 안내를 확인하고, 준비 수준이 고민된다면 상담을 통해 문의해 주세요.
               </p>
             </div>
           </div>
 
+          <!-- FAQ 4 (닫혀있음) -->
           <div class="accordion-item">
             <div class="accordion-header" onclick="toggleItem('faq-4', this)">
               <h3 class="accordion-main-title">어떤 기관이 운영하는 과정인가요?</h3>
-              <button class="toggle-badge-btn" aria-label="상세 내용 접기/펼치기">—</button>
+              <button class="toggle-badge-btn collapsed" aria-label="상세 내용 접기/펼치기">+</button>
             </div>
-            <div class="accordion-body" id="faq-4" style="display: flex; padding-left: 0;">
+            <div class="accordion-body" id="faq-4" style="display: none; padding-left: 0;">
               <p style="font-size: 15px; color: #475569; line-height: 1.65;">
                 청년취업사관학교(SeSAC)와 KT그룹 AI+ 아카데미가 함께하는 과정입니다. AI+ Academy는 대한상공회의소가 서울시·AI 선도기업 등과 협력해 운영하는 AI 특화 교육 프로그램입니다.
               </p>
